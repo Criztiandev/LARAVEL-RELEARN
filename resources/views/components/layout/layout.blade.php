@@ -18,13 +18,13 @@
 </head>
 
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-    </nav>
-
-    {{ $slot }}
+    <div class="antialiased bg-gray-50">
+        <x-layout.topbar />
+        <x-layout.sidebar />
+        <main class="p-4 md:ml-64 h-full pt-20 pl-8 ">
+            {{ $slot }}
+        </main>
+    </div>
 </body>
 
 </html>
